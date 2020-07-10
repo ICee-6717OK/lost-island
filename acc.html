@@ -18,9 +18,93 @@
       </ul>
     </nav>
     </div>
+    <div class=word>
+    <h2>The Lost Island</h2>
+  <p>Our wide range of hotel suites ensure your stay at <em>The Lost Island</em> is as magical as can be! From first class suites with king size beds to economy class, double bed rooms for you and your friends, rooms eqipped with air conditioning abd warm showers, you won't want to leave once you arrive!</p>
+    </div>  
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">001</div>
+  <img src="images/acc1.jpg" style="width:100%">
+  <div class="text">Experience ocean breeze from the comfort of your balcony.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">002</div>
+  <img src="images/acc2.jpg" style="width:100%">
+  <div class="text">For those who dan't prefer staying at the beach.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">003</div>
+  <img src="images/acc3.jpg" style="width:100%">
+  <div class="text">Queen siute for the queens.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">004</div>
+  <img src="images/acc4.jpg" style="width:100%">
+  <div class="text">Simplicity.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">005</div>
+  <img src="images/acc5.jpg" style="width:100%">
+  <div class="text">Double bed rooms for you and your friends.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">006</div>
+  <img src="images/acc6.jpg" style="width:100%">
+  <div class="text">For the lovers on the island....</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">007</div>
+  <img src="images/acc7.jpg" style="width:100%">
+  <div class="text">Honeymoon Suite, to make your union magical.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">008</div>
+  <img src="images/acc8.jpg" style="width:100%">
+  <div class="text">Hangouts lobby, get to interact with other tourists!</div>
+</div>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "ease in";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000);
+}
+</script>
     <div class="footer">
       <div class="footer-content">
-          <div class="left box">
+          <div class="center box">
               <h2>About Us</h2>
               <div class="content">
                   <p><em>The Lost Island</em> is the resort of your dreams, the closest thing to paradise, if not paradise itself. From the ocean breeze through the palm trees, the sandy beach and excuisite accommodation, you will get <strong>lost</strong> in our <em>Island of Dreams</em>!</p>
@@ -31,29 +115,11 @@
                   </div>
               </div>
           </div>
-          
-      <div class="right box">
-          <h2>Contacts</h2>
-          <div class="content">
-              <div class="place">
-                  <i class="material-icons">&#xe8b4;</i>
-                  <span class="text">The Lost Island, Zanzibar</span>
-              </div>
-              <div class="phone">
-                 <i class="material-icons">&#xe0b0;</i>
-                  <span class="text">+254 778816717</span>
-              </div>
-              <div class="email">
-                  <i class="material-icons">&#xe0be;</i>
-                  <span class="text">thelostisland@gmail.com</span>
-              </div>
-          </div>
-      </div>
       </div>
       
       <div class="footer-bottom">
-        ©2020 thelostisland.com
-  </div>
-</div>
+        ©2020 thelostisland.com. All rights reserved.
+      </div>
+    </div>
   </body>
 </html>
