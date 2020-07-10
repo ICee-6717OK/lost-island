@@ -114,3 +114,13 @@ li a:hover:not(.active) {
 .active {
   background-color: cacaca;
 }
+.word{
+  border:1px solid black;
+  background: linear-gradient(to right, #686868, #1a1a1a);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text{
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
